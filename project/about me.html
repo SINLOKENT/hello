@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<style>
+    * {
+       box-sizing: border-box;
+    }
+    body {
+        background-image: url("wotzz.jpg");
+        background-size: cover;
+       font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+       color: white;
+    }
+   
+    .center {
+  display: flex;
+  min-height: 200vh;
+  font-size: 24px;
+}
+
+.btn-1 {
+  width: 200px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+footer a,
+.btn-1 a{
+  text-decoration: none;
+  border: 2px solid #ffffff;
+  padding: 15px;
+  color: #f5f5f5;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  position: relative;
+  display: inline-block;
+}
+
+span {
+  position: relative;
+  z-index: 3;
+}
+
+
+
+.btn-1 a::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: -2px;
+  width: calc(100% + 6px);
+  height: calc(100% - 10px);
+  background-color: #000000;
+  transition: all 0.5s ease-in-out;
+  transform: scaleY(1);
+}
+
+.btn-1 a:hover::before {
+  transform: scaleY(0);
+}
+
+.btn-1 a::after {
+  content: "";
+  position: absolute;
+  left: 5px;
+  top: -5px;
+  width: calc(100% - 10px);
+  height: calc(100% + 10px);
+  background-color: #000000f5;
+  transition: all 0.8s ease-in-out;
+  transform: scaleX(0.9);
+}
+
+
+.btn-1 a:hover::after {
+  transform: scaleX(1.9);
+}
+
+footer{
+    text-align: center;
+  font-size: 10px;
+}
+    .container {
+       width: 50%;
+       background-color: rgb(255, 255, 255);
+       border-radius: 20px;
+    }
+    .cpp, .java, .python, .c {
+       text-align: center;
+       font-weight: bolder;
+       padding-top: 3px;
+       padding-bottom: 3px;
+       color: white;
+       border-radius: 20px;
+    }
+    .cpp {
+       width: 60%;
+       background-color: green;
+    }
+    .java {
+       width: 70%;
+       background-color: #0219ef;
+    }
+    .python {
+       width: 75%;
+       background-color: #ebf309;
+    }
+    .c {
+       width: 40%;
+       background-color: #f50909;
+    }
+    .con{
+        margin-left: 300px;
+        margin-top: 50px;
+        padding-left: 300px;
+       
+        
+    }
+    .pope{
+        background-image: url(lll.jpg);
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+       
+    }
+ </style>
+ </head>
+ <body>
+    <div class="center">
+        <div class="btn-1">
+         
+          <a href="C:\Users\Hp\Desktop\NIIT... prac\portfolio of me.html"><span>H o m e</span></a>
+        </div>
+        
+    <div class="con">
+        <div class="pope">
+ <h1>MY PROGRAMMING PROFICIENCY</h1>
+ <br>
+ </div>
+ <div class="container">
+ <div class="python">HTML (75%)</div>
+ </div>
+ <br>
+ <div class="container">
+ <div class="java">JAVA (70%)</div>
+ </div>
+ <br>
+ <div class="container">
+ <div class="cpp">C++ (60%)</div>
+ </div>
+ <br>
+ <div class="container">
+ <div class="c">CSS (40%)</div>
+ </div>
+ </div>
+ </body>
+ </html>
+ 
